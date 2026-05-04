@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding-top: 92px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Estilos do cabeçalho */
+
+#cabecalho{
+    background-color: #2f7a57;
+}
+
+#logoMenu{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #f2efe9;
+    
+}
+
+.linksNav{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #f2efe9;
+}
+
+.linksNav:hover{
+    font-size: 1.6em;
+    color: #9ABED6;
+}
+
+.navbar-toggler{
+    border: solid 4px #9ABED6;
+}
+
+/* Estilos das sessões */
+
+#rowSessaoSobre{
+    justify-content: space-around;
+    justify-content: center;
+}
+
+#colFoto {
+    display: flex;
+    justify-content: center;
+}
+
+#colSobre{
+    display: block;
+    justify-content: center;
+}
+
+#redonda{
+    width: 100%;
+    max-height: 220px;
+    max-width: 220px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: #9ABED6 solid 4px;
+    background-image: url(../../imagens/fotoPerfil.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*estilos dos accordion*/
+#paiListasAccordion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.accordion-item{
+    background-color: #f2efe9;
+}
+
+.accordion-item > h2 > button{
+    font-size: 1.2rem;
+    color: #525a92;
+
+}
+
+.listasAccordion > h4{
+    font-size: 1.1rem;
+    color: #525a92;
+}
+
+.accordion-item > p, h4, li, h2 {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #525a92;
+}
+
+#formacao{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #525a92;
+}
+
+.listasAccordion > ul > li{
+    font-size: 1.1em;
+    color: #525a92;
+}
+
+
+#fundoProjetos{
+    width: 100%;
+    height: auto;
+    background-image: url(../../imagens/fundoAprendizagem.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+}
+
+#linhaProjetos{
+    width: 60%; /* Ajuste conforme o tamanho do desenho do caderno */
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Faz uma coluna de projetos ficar embaixo da outra */
+    gap: 20px; /* Cria um espaço entre a linha de cima e a de baixo */
+}
+
+.colunaProj{
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 30px; /* Espaçamento entre os cards de semestre */
+}
+
+.divProjetos{
+    width: 170px;
+    height: 170px; /* Defina uma altura fixa para ficarem quadradinhos */
+    background-color: #2f7a57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; /* Para as bordas arredondadas da imagem */
+    text-align: center;
+}
+
+.divProjetos > h2{
+    color: #f2efe9;
+    font-size: 1.8rem;
+}
+
+.divProjetos:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+#rodape{
+    width: 100%;
+    background-color: #2f7a57;
+    max-height: 180px;
+}
+
+#linhaRodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 1.5%;
+}
+
+.textosRodape{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 1.1em;
+    color:#f2efe9;
+}
+
+.textosRodape > a {
+    text-decoration: none;
+    color:#f2efe9;
+}
+
+.textosRodape > a:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.fa-instagram{
+    font-size: 25px;
+}
+
+.fa-instagram:hover{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#colunaCopy{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*estilos da sessão agradecimentos*/
+.circuloAbrir {
+  width: 60px;
+  height: 60px;
+  background-color: #2e7d5b;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.circuloAbrir:hover {
+  background-color: #256d4e;
+  transform: scale(1.1);
+  transition: 0.2s;
+  border: solid 2px #525a92;
+}
+
+#linhaAgradecimentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divAgradecimentos{
+    background-color: #f2efe9;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#divAgradecimentos > p{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 1.1em;
+    color:#525a92;
+    text-align: justify;
+}
+
+/*estilos dos modais*/
+
+#imagemProj2sem{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+}
+
+#imagemProj3sem{
+    width: 44%;
+    height: auto;
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-bottom: 10px;
+}
+
+#imagemProj4sem{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+}
+
+#imagemProj5sem{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+}
+
+#imagemProj6sem{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.modal-header > h5, .modal-body > p{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #525a92;
+}
+
+.modal-header > h5{
+    font-size: 1.3em;
+}
+
+.btn{
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+}
+
+
+/*media queries*/
+
+@media (max-width: 560px) {
+    .linksNav{
+        font-size: 1.2em;
+    }
+
+    .linksNav:hover{
+        font-size: 1.3em;
+    }
+
+    #logoMenu{
+        font-size: 2em;
+    }
+
+    #paiListasAccordion{
+        display: block;
+    }
+
+    .listasAccordion > ul > li{
+        font-size: 1em;
+    }
+
+    #formacao{
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    
+    /* Remove a imagem de fundo do container pai */
+    #fundoProjetos {
+        background-image: none !important;
+        background-color:#f2efe9 /* Cor de fundo opcional para não ficar vazio */
+    }
+
+    /* Ajusta a largura da linha para ocupar a tela toda */
+    #linhaProjetos {
+        width: 96%; 
+        margin: 0 auto;
+    }
+
+    /* Faz com que os itens dentro de .colunaProj fiquem um abaixo do outro */
+    .colunaProj {
+        flex-direction: column;
+        align-items: center; /* Centraliza as caixinhas */
+        gap: 20px; /* Espaçamento vertical entre os itens */
+    }
+    
+    /* Opcional: Ajustar o tamanho das caixinhas se ficarem grandes demais no celular */
+    .divProjetos {
+        width: 80%; /* Ocupa 80% da largura da coluna */
+        max-width: 250px;
+    }
+
+    #imagemProj2sem{
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    #imagemProj3sem{
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    #imagemProj4sem{
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    #imagemProj5sem{
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    #imagemProj6sem{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #divAgradecimentos > p{
+        font-size: 0.9em;
+    }
+
+    .textosRodape{
+        font-size: 0.8em;
+    }
+
+    .fa-instagram{
+        font-size: 15px;
+    }
+
+    .fa-instagram:hover{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #linhaAgradecimentos{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    #fundoProjetos {
+        background-size: cover;
+    }
+
+    #linhaProjetos {
+        width: 80%; 
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 860px) {
+    .listasAccordion > ul > li{
+        font-size: 0.9em;
+    }
+}

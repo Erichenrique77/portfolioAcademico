@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/estilo.css">
+    <title>Portfólio - Eric</title>
+</head>
+<body>
+    
+    <!--Cabeçalho-->
+    <nav class="navbar navbar-expand-lg fixed-top" id="cabecalho">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand" id="logoMenu">Portfólio Acadêmico</a>
+
+            <!-- BOTÃO HAMBURGUER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item me-3">
+                    <a class="nav-link linksNav" href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item me-3">
+                    <a class="nav-link linksNav" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item me-3">
+                    <a class="nav-link linksNav" href="#agradecimentos">Agradecimentos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link linksNav" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Sessão "Sobre Mim"-->
+    <section id="sobre">
+        <div class="container-fluid">
+            <div class="row" id="rowSessaoSobre">
+                <!--Coluna da foto-->
+                <div class="col-md-3 col-sm-12 col-lg-3" id="colFoto">
+                    <div id="redonda" class="mt-2"></div>
+                </div>
+
+                <!--Coluna do Sobre mim e Tecnologias aprendidas-->
+                <div class="col-md-7 col-sm-12 col-lg-7" id="colSobre">
+                    <div class="accordion mt-3" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" class="tituloAccordion">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Minha Formação 
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p id="formacao"> Olá, me chamo Eric Henrique tenho 21 anos e, em 2026 irei concluir minha graduação como tecnólogo em Análise e Desenvolvimento de Sistemas (ADS) pela Fatec Lins. Em 2022 me formei no ensino médio com habilitação técnica em Desenvolvimento de Sistemas (DS) pela Etec de Lins.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" class="tituloAccordion">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Tecnologias trabalhadas no curso superior
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body" id="paiListasAccordion">
+                                    <div class="listasAccordion">
+                                        <h4>Front-end:</h4>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>Figma</li>
+                                            <li>Canvas</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="listasAccordion">
+                                        <h4>Back-end:</h4>
+                                        <ul>
+                                            <li>Linguagem C</li>
+                                            <li>Java</li>
+                                            <li>Spring Boot</li>
+                                            <li>Hibernate</li>
+                                            <li>PHP</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="listasAccordion">
+                                        <ul>
+                                            <li>SQL (SQL Developer)</li>
+                                            <li>Postman</li>
+                                            <li>XAMPP</li>
+                                            <li>PhpMyAdmin</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão "Projetos"-->
+    <section id="projetos">
+        <div class="container-fluid" id="fundoProjetos">
+            <div class="row" id="linhaProjetos">
+                <div class="col col-md-12 col-lg-12 col-sm-12 colunaProj">
+                    <!--Projeto 2º semestre-->
+                    <div class="divProjetos" data-bs-toggle="modal" data-bs-target="#modalSemestre2" style="cursor: pointer;">
+                        <h2>2º Semestre</h2>
+                    </div>
+
+                    <!--Projeto 3º semestre-->
+                    <div class="divProjetos" data-bs-toggle="modal" data-bs-target="#modalSemestre3" style="cursor: pointer;">
+                        <h2>3º Semestre</h2>
+                    </div>
+
+                    <!--Projeto 4º semestre-->
+                    <div class="divProjetos" data-bs-toggle="modal" data-bs-target="#modalSemestre4" style="cursor: pointer;">
+                        <h2>4º Semestre</h2>
+                    </div>
+                </div>
+
+                <div class="col col-md-12 col-lg-12 col-sm-12 colunaProj">
+                    <!--Projeto 5º semestre-->
+                    <div class="divProjetos" data-bs-toggle="modal" data-bs-target="#modalSemestre5" style="cursor: pointer;">
+                        <h2>5º Semestre</h2>
+                    </div>
+
+                    <!--Projeto 6º semestre-->
+                    <div class="divProjetos" data-bs-toggle="modal" data-bs-target="#modalSemestre6" style="cursor: pointer;">
+                        <h2>6º Semestre</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agradecimentos">
+        <div class="container-fluid" id="containerAgradecimentos">
+            <div class="row" id="linhaAgradecimentos">
+                <div class="col col-md-10 col-lg-10 col-sm-12">
+                    <div class="circuloAbrir">
+                        <i class="fa-solid fa-info"></i>
+                    </div>
+
+                    <div id="divAgradecimentos">
+                        <p>Obrigado pela sua visita!</p>
+                        <p>Quero deixar registrado a minha gratidão ao Centro Paula Souza (CPS) por proporcionar instituições de ensino (ETECs e FATECs) que mudam a vida de muitas pessoas.
+                        Agradeço, também, as pessoas que fizeram parte da minha graduação em ADS. Sou grato aos professores, colegas de turma, orientador de TCC e funcionários. Que Deus vos abençoe!
+                        </p>
+                        <p><i>“A educação é um ato de amor, por isso, um ato de coragem.” (Paulo Freire)</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <footer>
+            <div class="container-fluid" id="rodape">
+                <div class="row" id="linhaRodape">
+                    <div class="col col-md-6 col-lg-5 col-sm-6">
+                        <div>
+                            <h4 class="textosRodape">
+                                E-mail pessoal: <a href="#">erichenrique99911@gmail.com</a>  
+                            </h4>
+                        </div>
+                        <div>
+                            <h4 class="textosRodape">
+                                Rede social: <i class="fa-brands fa-instagram"></i>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-6 col-lg-5 col-sm-6" id="colunaCopy">
+                        <div>
+                            <h4 class="textosRodape">
+                               <i class="fa-regular fa-copyright"></i> 2026 - Eric H. S. Ricoldi
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- Modal para o 2º Semestre -->
+    <div class="modal fade modal-lg" id="modalSemestre2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto 2º Semestre:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>No 2º semestre do curso, na disciplina de Interação Humano-Computador (IHC), foi desenvolvido um formulário web de inscrição para um evento de conferência de tecnologia.</p>
+                    <img src="imagens/img-proj2sem.png" alt="Imagem projeto 2º semestre" id="imagemProj2sem">
+                    <p>O objetivo do projeto foi implementar uma interface com boa qualidade de software e experiência de usuário (UX) – conteúdo teórico da disciplina de IHC.  Tecnologias utilizadas: HTML, CSS, JavaScript e Bootstrap.</p>
+                    <button class="btn btn-success" id="botaoGit">Ver no Github</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para o 3º Semestre -->
+    <div class="modal fade modal-lg" id="modalSemestre3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto 3º Semestre:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O projeto do 3º semestre, realizado na disciplina de estrutura de dados, trata-se de um sistema para gestão de uma livraria desenvolvido na linguagem C.  O sistema utiliza as estruturas de dados ponteiros e structs. E como parte fundamental do projeto usufrui-se do sistema de arquivos.</p>
+                    <img src="imagens/img-proj3sem.png" alt="Imagem projeto 3º semestre" id="imagemProj3sem">
+                    <p>O sistema da livraria consiste em um menu de opções em que se escolhe qual funcionalidade do sistema executar digitando o número correspondente a função. As principais funcionalidades são: CRUD de livros, autores e clientes. Também funções para venda e funções que relacionam livros e autores.</p>
+                    <button class="btn btn-success" id="botaoGit">Ver no Github</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para o 4º Semestre -->
+    <div class="modal fade modal-lg" id="modalSemestre4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto 4º Semestre:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Na disciplina de programação web, desenvolvemos uma API Rest voltada à gestão de castração de animais. O intuito do projeto era que ele servisse de apoio as atividades de uma ONG da cidade de Avanhandava.</p>
+                    <img src="imagens/img-proj4sem.png" alt="Imagem projeto 4º semestre" id="imagemProj4sem">
+                    <p>O projeto foi desenvolvido na linguagem Java com uso dos frameworks Spring e Hibernate. O sistema foi estruturado sob a arquitetura Model-View-Controller (MVC). A API não possui uma interface. Os testes são realizados por meio do Postman, já que as operações de CRUD da API são através de métodos HTTP.</p>
+                    <button class="btn btn-success" id="botaoGit">Ver no Github</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para o 5º Semestre -->
+    <div class="modal fade modal-lg" id="modalSemestre5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto 5º Semestre:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Como projeto do 5º semestre foi apresentado uma coletânea de comandos SQL de consulta a um banco de dados. Na disciplina de laboratório de banco de dados aprendemos comandos SQL fundamentais utilizando o SGBD da Oracle: SQL Developer.</p>
+                    <img src="imagens/img-proj5sem.png" alt="Imagem projeto 5º semestre" id="imagemProj5sem">
+                    <p>O banco de dados utilizado para as consultas foi criado em aula. Esse banco registra notas fiscais de compras de produtos. É formado por 5 tabelas: Produtos, Vendedores, Clientes, Notas_fiscais e ItensNotasFiscais.</p>
+                    <button class="btn btn-success" id="botaoGit">Ver no Github</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para o 6º Semestre -->
+    <div class="modal fade modal-lg" id="modalSemestre6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto 6º Semestre:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Na disciplina de tópicos especiais em informática desenvolvemos, como prova P1, uma aplicação web em PHP que realiza CRUD de produtos e fornecedores e possui funcionalidade de busca e paginação.</p>
+                    <img src="imagens/img-proj6sem.png" alt="Imagem projeto 6º semestre" id="imagemProj6sem">
+                    <p>Para o front-end da aplicação foi utilizado o framework Bootstrap. Já para o back-end, além do PHP, o banco de dados MySQL gerenciado por meio da ferramenta PhpMyadmin.</p>
+                    <button class="btn btn-success" id="botaoGit">Ver no Github</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/fecharMenu.js"></script>
+    <script src="https://kit.fontawesome.com/65e33a3528.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/esconder.js"></script>
+</body>
+</html>
