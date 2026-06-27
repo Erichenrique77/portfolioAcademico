@@ -75,7 +75,7 @@ section{
 #paiListasAccordion{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .accordion-item{
@@ -89,7 +89,7 @@ section{
 }
 
 .listasAccordion > h4{
-    font-size: 1.1rem;
+    font-size: 1.1em;
     color: #525a92;
 }
 
@@ -107,7 +107,7 @@ section{
 }
 
 .listasAccordion > ul > li{
-    font-size: 1.1em;
+    font-size: 1em;
     color: #525a92;
 }
 
@@ -304,6 +304,7 @@ section{
     font-weight: 400;
     font-size: 1.1em;
     color: #525a92;
+    text-align: justify;
 }
 
 .modal-header > h5{
@@ -313,6 +314,23 @@ section{
 .btn{
     font-family: "Kalam", cursive;
     font-weight: 700;
+}
+
+
+#tituloCaixinhaBaixar{
+    color: #f2efe9;
+    font-size: 1.5rem;
+}
+
+.fa-book-open-reader{
+    font-size: 40px;
+    color: #f2efe9;
+}
+
+#caixinhaBaixar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -339,8 +357,13 @@ section{
         font-size: 1em;
     }
 
+    .listasAccordion > h4{
+        font-size: 1.1em;
+    }
+
     #formacao{
         font-size: 1em;
+        text-align: justify;
     }
 
 }
@@ -435,9 +458,9 @@ section{
 
     /*estilo da logo fatec do rodapé*/
     #logoFatec{
-        width: 90%;
+        width: 75%;
         height: auto;
-        margin-left: 9.5%;
+        margin-left: 24.5%;
         margin-bottom: 10px;
     }
 
@@ -454,8 +477,17 @@ section{
 
 }
 
-@media (min-width: 768px) and (max-width: 860px) {
+@media (min-width: 561px) and (max-width: 990px) {
     .listasAccordion > ul > li{
-        font-size: 0.9em;
+        font-size: 1em;
     }
+
+    .listasAccordion > h4{
+        font-size: 1.1em;
+    }
+
+    #paiListasAccordion{
+        display: block;
+    }
+
 }

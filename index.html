@@ -78,8 +78,17 @@
                                             <li>HTML</li>
                                             <li>CSS</li>
                                             <li>Bootstrap</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="listasAccordion">
+                                        <h4>Ferramentas visuais:</h4>
+                                        <ul>
                                             <li>Figma</li>
                                             <li>Canvas</li>
+                                            <li>Draw.io</li>
+                                            <li>Astah UML (diagramas)</li>
+                                            <li>Cisco Packet Tracer (redes)</li>
                                         </ul>
                                     </div>
 
@@ -91,15 +100,18 @@
                                             <li>Spring Boot</li>
                                             <li>Hibernate</li>
                                             <li>PHP</li>
+                                            <li>SQL</li>
                                         </ul>
                                     </div>
 
                                     <div class="listasAccordion">
+                                        <h4>Ferramentas:</h4>
                                         <ul>
-                                            <li>SQL (SQL Developer)</li>
+                                            <li>Oracle SQL Developer</li>
                                             <li>Postman</li>
                                             <li>XAMPP</li>
                                             <li>PhpMyAdmin</li>
+                                            <li>VirtualBox (virtualização)</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -142,6 +154,14 @@
                     <div class="divProjetos" data-bs-toggle="modal" data-bs-target="#modalSemestre6" style="cursor: pointer;">
                         <h2>6º Semestre</h2>
                     </div>
+
+                    <!--Download Monografia-->
+                    <div class="divProjetos" id="caixinhaBaixar" data-bs-toggle="modal" data-bs-target="#modalBaixarMonografia" style="cursor: pointer;">
+                        <h2 id="tituloCaixinhaBaixar">
+                            Ver Monografia Completa
+                            <i class="fa-solid fa-book-open-reader"></i>  
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,6 +179,7 @@
                         <p>Obrigado pela sua visita!</p>
                         <p>Quero deixar registrado a minha gratidão ao Centro Paula Souza (CPS) por proporcionar instituições de ensino (ETECs e FATECs) que mudam a vida de muitas pessoas.
                         Agradeço, também, as pessoas que fizeram parte da minha graduação em ADS. Sou grato aos professores, colegas de turma, orientador de TCC e funcionários. Que Deus vos abençoe!
+                        &#x1F913; &#x1F4DA; &#x1F3EB;
                         </p>
                         <p><i>“A educação é um ato de amor, por isso, um ato de coragem.” (Paulo Freire)</i></p>
                     </div>
@@ -232,9 +253,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>O projeto do 3º semestre, realizado na disciplina de estrutura de dados, trata-se de um sistema para gestão de uma livraria desenvolvido na linguagem C.  O sistema utiliza as estruturas de dados arquivos e structs.</p>
+                    <p>O projeto do 3º semestre, realizado na disciplina de estrutura de dados, trata-se de um sistema para gestão de uma livraria desenvolvido na linguagem C.
+                    </p>
                     <img src="imagens/img-proj3sem.png" alt="Imagem projeto 3º semestre" id="imagemProj3sem">
-                    <p>O sistema consiste em um menu de opções. Basta digitar o número da função desejada e clicar em Enter para executar a função. As principais funcionalidades são: CRUD de livros, autores e clientes. Também funções para venda e funções que relacionam livros e autores.</p>
+                    <p>O sistema realiza operações de CRUD de livros, autores e clientes. Também registra venda de livros e associa autores a livros. As informações do sistema são gravadas e lidas em arquivos binários. Os dados são gravados e lidos por meio de structs.
+                    </p>
                     <a href="https://github.com/Erichenrique77/repositorioProjeto3semestre.git" target="_blank">
                         <button class="btn btn-success" id="botaoGit">Ver no Github</button>
                     </a>
@@ -255,9 +278,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Na disciplina de programação web, desenvolvemos uma API Rest voltada à gestão de castração de animais. O intuito do projeto era que ele servisse de apoio as atividades de uma ONG da cidade de Avanhandava.</p>
+                    <p>O projeto do 4º semestre foi um projeto extensionista que envolveu as disciplinas: programação web e banco de dados; nele desenvolvemos uma API Rest voltada à gestão de castração de animais e outros tipos de manejo por meio de agendamentos. </p>
                     <img src="imagens/img-proj4sem.png" alt="Imagem projeto 4º semestre" id="imagemProj4sem">
-                    <p>O projeto foi desenvolvido na linguagem Java com uso dos frameworks Spring e Hibernate. O sistema foi estruturado sob a arquitetura Model-View-Controller (MVC). A API não possui uma interface. Os testes são realizados por meio do Postman, já que as operações de CRUD da API são através de métodos HTTP.</p>
+                    <p>O intuito do projeto era que ele servisse de apoio às atividades de uma ONG da cidade de Avanhandava. O projeto foi desenvolvido na linguagem Java com uso dos frameworks Spring e Hibernate. O sistema foi estruturado sob a arquitetura Model-View-Controller (MVC). Os testes são realizados por meio do Postman, já que as operações de CRUD da API são através de métodos HTTP.</p>
                     <a href="https://github.com/Erichenrique77/repositorioProjeto4semestre.git" target="_blank">
                         <button class="btn btn-success" id="botaoGit">Ver no Github</button>
                     </a>
@@ -307,6 +330,28 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal download monografia-->
+    <div class="modal fade" tabindex="-1" id="modalBaixarMonografia">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Baixar arquivo da monografia
+                        <i class="fa-solid fa-download"></i>                        
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Clique em Baixar para acessar a monografia completa!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">Baixar</button>
                 </div>
             </div>
         </div>
